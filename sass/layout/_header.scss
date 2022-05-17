@@ -1,0 +1,144 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header--padding {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.header__logo--right {
+  margin-right: 93px;
+}
+
+.web--blue {
+  color: var(--fourth-color);
+}
+.studio--black {
+  color: var(--main-color);
+}
+
+.menu {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  display: flex;
+}
+
+.menu-studio__link {
+  color: var(--hover-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+
+    margin-top: 28px;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+.menu-studio__link--relative {
+  position: relative;
+}
+
+.menu-portfolio__link {
+  color: var(--hover-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 28px;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+.menu-portfolio__link--relative {
+  position: relative;
+}
+
+.menu-item {
+  & > a {
+    color: var(--main-color);
+    transition: color var(--transition-main);
+  }
+
+  & > a:hover,
+  & > a:focus {
+    color: var(--hover-color);
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts-header--left {
+  margin-left: auto;
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-main);
+  
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+.menu__icon {
+  fill: currentColor;
+}
+
+.menu__icon--right {
+  margin-right: 10px;
+}
