@@ -13,3 +13,21 @@
 //   line-height: 1.71;
 //   letter-spacing: 0.03em;
 // }
+
+@mixin mobil {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
