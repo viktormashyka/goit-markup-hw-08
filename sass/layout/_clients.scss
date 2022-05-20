@@ -1,32 +1,99 @@
 .client__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  @media screen and (max-width: 1999px) {
+    @include font(700, 28px, 1.18, 0.03em);
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 36px, null, null);
+    margin-bottom: 50px;
+  }
+
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
+  // letter-spacing: 0.03em;
   color: var(--main-color);
   padding-top: 0px;
 }
 
-.client__title--bottom {
-  margin-bottom: 50px;
-}
+// .client__title--bottom {
+//   margin-bottom: 50px;
+// }
 
 .client__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // @media screen and (max-width: 480px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   // gap: 30px;
+  //   margin-bottom: -30px;
+  // }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
+
+  @media screen and (min-width: 768) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    // margin-bottom: -30px;
+    margin-left: -30px;
+  }
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
 
-.client__item + .client__item {
-  margin-left: 30px;
+.client-item {
+  // width: auto;
+  @media screen and (max-width: 767px) {
+    // display: flex;
+    // flex-wrap: wrap;
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768) and (max-width: 1999px) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-basis: culc((100% - 60px) / 2);
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // display: flex;
+    // flex-basis: culc((100% - 120px) / 4);
+    width: calc(100% / 6 - 30px);
+    margin-left: 30px;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+  }
 }
+
+// .client__item + .client__item {
+//   margin-left: 30px;
+// }
 
 .client__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: auto;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
