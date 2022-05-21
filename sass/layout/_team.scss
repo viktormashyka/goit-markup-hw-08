@@ -7,7 +7,7 @@
 }
 
 .team__title {
-  @media screen and (max-width: 1999px) {
+  @media screen and (max-width: 1199px) {
     @include font(700, 28px, 1.18, 0.03em);
     margin-bottom: 30px;
   }

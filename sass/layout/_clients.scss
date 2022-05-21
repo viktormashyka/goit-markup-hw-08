@@ -1,5 +1,5 @@
 .client__title {
-  @media screen and (max-width: 1999px) {
+  @media screen and (max-width: 1199px) {
     @include font(700, 28px, 1.18, 0.03em);
     margin-bottom: 30px;
   }
@@ -23,13 +23,6 @@
 // }
 
 .client__list {
-  // @media screen and (max-width: 480px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   // gap: 30px;
-  //   margin-bottom: -30px;
-  // }
-
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +30,7 @@
     margin-left: -30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -30px;
@@ -73,6 +66,8 @@
     // flex-basis: culc((100% - 120px) / 4);
     width: calc(100% / 6 - 30px);
     margin-left: 30px;
+    // margin-bottom: 30px;
+
     // &:not(:last-child) {
     //   margin-right: 30px;
     // }
