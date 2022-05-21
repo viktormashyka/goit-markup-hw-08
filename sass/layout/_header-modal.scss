@@ -1,0 +1,25 @@
+.header-mob__btn-open {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  margin-left: auto;
+}
+
+// .header-mob {
+//   width: 100%;
+//   margin: 0 auto;
+
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.header-mob__btn-open-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header-mob__btn-close-icon {
+  width: 20px;
+  height: 20px;
+}
