@@ -29,9 +29,8 @@
           <span class="web--blue">Web</span><span class="studio--black">Studio</span></a
         >
         <button type="button" class="header-mob__btn-open">
-          <svg width="" height="" class="header-mob__btn-open-icon">
-            <use href="./images/icons.svg#"></use></svg
-          >O
+          <svg width="40" height="40" class="header-mob__btn-open-icon">
+            <use href="./images/icons.svg#icon-menu_40px"></use></svg>
         </button>
         <nav class="navigation">
           <ul class="menu">
@@ -68,12 +67,12 @@
         </ul>
       </div>
       <!-- HEADER-MODAL-->
-      <div class="container">
-        <div class="header-mob">
+      <div class="header-mob is-hidden">
+        <div class="mob container">
           <button type="button" class="header-mob__btn-close">
-            <svg width="" height="" class="header-mob__btn-close-icon">
-              <use href="./images/icons.svg#"></use></svg
-            >X
+            <svg width="40" height="40" class="header-mob__btn-close-icon">
+              <use href="./images/icons.svg#icon-close_40px"></use></svg
+            >
           </button>
           <ul class="mob-menu">
             <li class="mob-menu__item list">
@@ -88,35 +87,27 @@
           </ul>
           <ul class="mob-contacts link">
             <li class="mob-menu__item list">
-              <a href="mailto:info@devstudio.com" class="mob-menu__link link"
-                ><svg width="16" height="12" class="mob-menu__icon">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
+              <a href="mailto:info@devstudio.com" class="mob-menu__link-mail link">
+                info@devstudio.com</a>
             </li>
             <li class="mob-menu__item list">
-              <a href="tel:+380961111111" class="mob-menu__link link"
-                ><svg width="10" height="16" class="mob-menu__icon">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
+              <a href="tel:+380961111111" class="mob-menu__link-phone link">
+                +38 096 111 11 11</a>
             </li>
           </ul>
           <ul class="mob-social">
-            <li class="mob-social__item list">
+            <li class="mob-social__item list link">
               <a href="" class="link" lang="en" target="_blank" rel="noopener norefferer nofollow"
                 >Instagram</a
               >
             </li>
-            <li class="mob-social__item list">
+            <li class="mob-social__item list link">
               <a href="" class="link" lang="en target="_blank" rel="noopener norefferer nofollow"">Twitter</a>
             </li>
-            <li class="mob-social__item list">
+            <li class="mob-social__item list link">
               <a href="" class="link" lang="en target="_blank" rel="noopener norefferer nofollow"">Facebook</a>
             </li>
-            <li class="mob-social__item list">
+            <li class="mob-social__item list link">
               <a href="" class="link" lang="en target="_blank" rel="noopener norefferer nofollow"">LinkedIn</a>
             </li>
           </ul>
@@ -562,5 +553,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
