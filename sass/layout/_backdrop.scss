@@ -29,8 +29,8 @@
   position: absolute;
 
   @media screen and (max-width: 479px) {
-    max-width: 405px;
-    min-height: 609px;
+    width: 90vw;
+    height: 90vh;
   }
 
   @media screen and (min-width: 480px) {
@@ -42,8 +42,6 @@
     width: 528px;
     height: 581px;
   }
-  // max-width: 528px;
-  // min-height: 581px;
   top: 50%;
   left: 50%;
 
@@ -116,10 +114,7 @@
 }
 
 .modal-form__title {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 1.17, 0.01em);
   color: #757575;
 }
 

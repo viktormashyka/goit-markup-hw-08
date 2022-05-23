@@ -350,13 +350,22 @@ address {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #fff;
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition: opacity var(--transition-main), background-color var(--transition-main), visibility var(--transition-main), transform var(--transition-main);
+}
+@media screen and (min-width: 768px) {
+  .header-mob {
+    display: none;
+  }
 }
 .header-mob .container {
   display: flex;
@@ -371,13 +380,7 @@ address {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
-
-.header-mob.is-hidden .mob {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transform: translate(100%, 100%) scale(0.5);
+  transform: translateY(-100%);
 }
 
 .mob-menu {
@@ -397,6 +400,14 @@ address {
 }
 .mob-menu__item + .mob-menu__item {
   margin-top: 32px;
+}
+
+.mob-menu-studio__link {
+  color: var(--fourth-color);
+}
+
+.mob-menu-portfolio__link {
+  color: var(--fourth-color);
 }
 
 .mob-menu__link-mail {
@@ -434,6 +445,14 @@ address {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--fourth-color);
+}
+.mob-social__item:not(:last-child) > a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
 }
 .mob-social__item + .mob-social__item {
   margin-left: 20px;
@@ -659,7 +678,7 @@ address {
 .team__title {
   text-align: center;
   color: var(--main-color);
-  padding-top: 0px;
+  padding-top: 0;
 }
 @media screen and (max-width: 1199px) {
   .team__title {
@@ -678,10 +697,6 @@ address {
   }
 }
 
-.team__list {
-  /* margin-left: -30px; */
-  /* justify-content: space-between; */
-}
 @media screen and (min-width: 480px) {
   .team__list {
     margin-bottom: -30px;
@@ -887,6 +902,16 @@ address {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .portfolio-btn__list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-btn__list {
+    flex-wrap: wrap;
+  }
+}
 
 .portfolio-btn__item:not(:last-child) {
   margin-right: 8px;
@@ -901,8 +926,8 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-color);
   background-color: #f5f4fa;
   width: auto;
@@ -920,20 +945,44 @@ address {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-project__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+@media screen and (min-width: 480px) {
+  .portfolio-project__list {
+    margin-bottom: -30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-project__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-project__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
-/* .main-portfolio-projects {
-justify-content: space-between;
-} */
-.portfolio-project__item {
-  /* flex-basis: calc((100% - 270px) / 9); */
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and (max-width: 767px) {
+  .portfolio-project__item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-project__item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-project__item {
+    width: calc(33.3333333333% - 30px);
+    margin-left: 30px;
+  }
 }
 
 .portfolio-project__link {
@@ -971,7 +1020,10 @@ justify-content: space-between;
 }
 
 .portfolio-project__text--padding {
-  padding: 63px 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio-project__border {
@@ -994,6 +1046,7 @@ justify-content: space-between;
 }
 
 .portfolio-project__name {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -1309,8 +1362,8 @@ input .footer__input {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    max-width: 405px;
-    min-height: 609px;
+    width: 90vw;
+    height: 90vh;
   }
 }
 @media screen and (min-width: 480px) {

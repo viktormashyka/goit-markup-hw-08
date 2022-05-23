@@ -40,16 +40,27 @@
 }
 
 .header-mob {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #fff;
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+
+  transition: opacity var(--transition-main), background-color var(--transition-main),
+    visibility var(--transition-main), transform var(--transition-main);
 
   .container {
     display: flex;
@@ -66,13 +77,8 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
 
-.header-mob.is-hidden .mob {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transform: translate(100%, 100%) scale(0.5);
+  transform: translateY(-100%);
 }
 
 .mob-menu {
@@ -93,6 +99,14 @@
   & + & {
     margin-top: 32px;
   }
+}
+
+.mob-menu-studio__link {
+  color: var(--fourth-color);
+}
+
+.mob-menu-portfolio__link {
+  color: var(--fourth-color);
 }
 
 .mob-menu__link-mail {
@@ -128,6 +142,15 @@
     @include font(500, 18px, 1.22, 0.02em);
 
     color: var(--fourth-color);
+  }
+
+  &:not(:last-child) > a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
   }
 
   & + & {
