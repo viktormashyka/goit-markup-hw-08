@@ -54,6 +54,7 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  padding-right: 40px;
 
   opacity: 1;
   visibility: visible;
@@ -109,8 +110,9 @@
   color: var(--fourth-color);
 }
 
-.mob-menu__link-mail {
+.mob-menu__link-phone {
   @include font(500, 34px, 1.18, 0.02em);
+
   color: var(--fourth-color);
   transition: color var(--transition-main);
 
@@ -121,7 +123,7 @@
   margin-bottom: 32px;
 }
 
-.mob-menu__link-phone {
+.mob-menu__link-mail {
   @include font(500, 24px, 1.17, 0.02em);
 
   color: var(--fourth-color);
