@@ -30,7 +30,8 @@
         >
         <button type="button" class="header-mob__btn-open">
           <svg width="40" height="40" class="header-mob__btn-open-icon">
-            <use href="./images/icons.svg#icon-menu_40px"></use></svg>
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
         </button>
         <nav class="navigation">
           <ul class="menu">
@@ -51,8 +52,9 @@
           <li class="menu__item list">
             <a href="mailto:info@devstudio.com" class="menu__link link"
               ><svg width="16" height="12" class="menu__icon menu__icon--right">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>info@devstudio.com</a>
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
           <li class="menu__item list">
             <a href="tel:+380961111111" class="menu__link link"
@@ -69,8 +71,8 @@
         <div class="container">
           <button type="button" class="header-mob__btn-close">
             <svg width="40" height="40" class="header-mob__btn-close-icon">
-              <use href="./images/icons.svg#icon-close_40px"></use></svg
-            >
+              <use href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
           </button>
           <ul class="mob-menu">
             <li class="mob-menu__item list">
@@ -86,29 +88,33 @@
           <ul class="mob-contacts link">
             <li class="mob-menu__item list">
               <a href="mailto:info@devstudio.com" class="mob-menu__link-mail link">
-                info@devstudio.com</a>
+                info@devstudio.com</a
+              >
             </li>
             <li class="mob-menu__item list">
-              <a href="tel:+380961111111" class="mob-menu__link-phone link">
-                +38 096 111 11 11</a>
+              <a href="tel:+380961111111" class="mob-menu__link-phone link"> +38 096 111 11 11</a>
             </li>
           </ul>
           <ul class="mob-social">
             <li class="mob-social__item list link">
               <a href="" class="link" lang="en" target="_blank" rel="noopener norefferer nofollow">
-                Instagram</a>
+                Instagram</a
+              >
             </li>
             <li class="mob-social__item list link">
               <a href="" class="link" lang="en" target="_blank" rel="noopener norefferer nofollow">
-                Twitter</a>
-            </li>
-            <li class="mob-social__item list link">
-              <a href="" class="link" lang="en target="_blank" rel="noopener norefferer nofollow">
-                Facebook</a>
+                Twitter</a
+              >
             </li>
             <li class="mob-social__item list link">
               <a href="" class="link" lang="en" target="_blank" rel="noopener norefferer nofollow">
-                LinkedIn</a>
+                Facebook</a
+              >
+            </li>
+            <li class="mob-social__item list link">
+              <a href="" class="link" lang="en" target="_blank" rel="noopener norefferer nofollow">
+                LinkedIn</a
+              >
             </li>
           </ul>
         </div>
@@ -192,19 +198,41 @@
           <ul class="about__list">
             <li class="about__item list">
               <div class="about__field">
-                <img src="./images/box_1.jpg" alt="планшет клавіатура малюнок" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/box/box_1-lep.jpg 1x, ./images/box/box_1-lep-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+
+                  <img src="./images/box/box_1-lep.jpg" alt="планшет клавіатура малюнок" />
+                </picture>
+
                 <h3 class="about__text">Десктопные приложения</h3>
               </div>
             </li>
             <li class="about__item list">
               <div class="about__field">
-                <img src="./images/box_2.jpg" alt="ноутбук телефон в в руках" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/box/box_2-lep.jpg 1x, ./images/box/box_2-lep-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+
+                  <img src="./images/box/box_2-lep.jpg" alt="ноутбук телефон в в руках" />
+                </picture>
                 <h3 class="about__text">Мобильные приложения</h3>
               </div>
             </li>
             <li class="about__item list">
               <div class="about__field">
-                <img src="./images/box_3.jpg" alt="планшет в руках" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/box/box_3-lep.jpg 1x, ./images/box/box_3-lep-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+
+                  <img src="./images/box/box_3-lep.jpg" alt="планшет в руках" />
+                </picture>
                 <h3 class="about__text">Дизайнерские решения</h3>
               </div>
             </li>
@@ -217,7 +245,31 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item list">
-              <img src="./images/foto_demjanenko.jpg" alt="фото Игорь Демяненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/foto/foto_demjanenko-lep.jpg    1x,
+                    ./images/foto/foto_demjanenko-lep-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/foto/foto_demjanenko-tab.jpg    1x,
+                    ./images/foto/foto_demjanenko-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/foto/foto_demjanenko-mob.jpg    1x,
+                    ./images/foto/foto_demjanenko-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img src="./images/foto/foto_demjanenko-lep.jpg" alt="фото Игорь Демяненко" />
+              </picture>
               <div class="team-field">
                 <h3 class="team-field__title team-field__title--bottom">Игорь Демьяненко</h3>
                 <p lang="en" class="team-field__text team-field__text--bottom">Product Designer</p>
@@ -254,7 +306,31 @@
               </div>
             </li>
             <li class="team__item list">
-              <img src="./images/foto_repina.jpg" alt="фото Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/foto/foto_repina-lep.jpg    1x,
+                    ./images/foto/foto_repina-lep-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/foto/foto_repina-tab.jpg    1x,
+                    ./images/foto/foto_repina-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/foto/foto_repina-mob.jpg    1x,
+                    ./images/foto/foto_repina-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img src="./images/foto/foto_repina-lep.jpg" alt="фото Ольга Репина" />
+              </picture>
               <div class="team-field">
                 <h3 class="team-field__title team-field__title--bottom">Ольга Репина</h3>
                 <p lang="en" class="team-field__text team-field__text--bottom">
@@ -293,7 +369,31 @@
               </div>
             </li>
             <li class="team__item list">
-              <img src="./images/foto_tarasov.jpg" alt="фото Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/foto/foto_tarasov-lep.jpg    1x,
+                    ./images/foto/foto_tarasov-lep-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/foto/foto_tarasov-tab.jpg    1x,
+                    ./images/foto/foto_tarasov-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/foto/foto_tarasov-mob.jpg    1x,
+                    ./images/foto/foto_tarasov-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img src="./images/foto/foto_tarasov-lep.jpg" alt="фото Николай Тарасов" />
+              </picture>
               <div class="team-field">
                 <h3 class="team-field__title team-field__title--bottom">Николай Тарасов</h3>
                 <p lang="en" class="team-field__text team-field__text--bottom">Marketing</p>
@@ -330,7 +430,31 @@
               </div>
             </li>
             <li class="team__item list">
-              <img src="./images/foto_ermakov.jpg" alt="фото Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/foto/foto_ermakov-lep.jpg    1x,
+                    ./images/foto/foto_ermakov-lep-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/foto/foto_ermakov-tab.jpg    1x,
+                    ./images/foto/foto_ermakov-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/foto/foto_ermakov-mob.jpg    1x,
+                    ./images/foto/foto_ermakov-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img src="./images/foto/foto_ermakov-lep.jpg" alt="фото Михаил Ермаков" />
+              </picture>
               <div class="team-field">
                 <h3 class="team-field__title team-field__title--bottom">Михаил Ермаков</h3>
                 <p lang="en" class="team-field__text team-field__text--bottom">UI Designer</p>
@@ -552,7 +676,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,11 +1,26 @@
 .hero {
-  background-image: url(../images/overlay-hero.png), url(../images/img-hero.jpg),
-    url(../images/bg-hero.png);
+  background-image: url(../images/hero/overlay-hero.png), url(../images/hero/img-hero-lep.jpg),
+    url(../images/hero/bg-hero.png);
+
+  // background-image: url(../images/hero/overlay-hero.png), url(../images/hero/img-hero-lep.jpg),
+  //   url(../images/hero/bg-hero.png);
   max-width: 1600px;
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/overlay-hero.png), url(../images/hero/img-hero-lep-2x.jpg),
+      url(../images/hero/bg-hero.png);
+
+    // background-image: url(../images/hero/overlay-hero.png), url(../images/hero/img-hero-lep.jpg),
+    //   url(../images/hero/bg-hero.png);
+  }
 }
 
 .hero--padding {
@@ -30,16 +45,6 @@
   text-transform: uppercase;
   color: var(--third-color);
   width: 100%;
-  // @include font(900, 44px, 1.36, 0.06em);
-
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // text-align: center;
-  // letter-spacing: 0.06em;
-  // text-transform: uppercase;
-  // color: var(--third-color);
-  // width: 696px;
 
   height: auto;
   display: block;
@@ -55,11 +60,7 @@
   @include font(700, 16px, 1.88, 0.06em);
 
   font-family: inherit;
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 1.88;
   text-align: center;
-  // letter-spacing: 0.06em;
   color: var(--third-color);
   background-color: var(--hover-color);
   width: 200px;

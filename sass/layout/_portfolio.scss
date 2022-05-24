@@ -136,7 +136,6 @@
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
-  // padding: 63px 24px;
 }
 
 .portfolio-project__border {
@@ -148,10 +147,6 @@
 
 .portfolio-project__title {
   @include font(700, 18px, 2, 0.06em);
-  // font-weight: 700;
-  // font-size: 18px;
-  // line-height: 2;
-  // letter-spacing: 0.06em;
   color: var(--main-color);
 }
 
@@ -161,8 +156,5 @@
 
 .portfolio-project__name {
   @include font(400, 16px, 1.88, 0.03em);
-  // font-size: 16px;
-  // line-height: 1.88;
-  // letter-spacing: 0.03em;
   color: var(--second-color);
 }

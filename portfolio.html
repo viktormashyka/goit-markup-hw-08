@@ -30,7 +30,8 @@
         >
         <button type="button" class="header-mob__btn-open">
           <svg width="40" height="40" class="header-mob__btn-open-icon">
-            <use href="./images/icons.svg#icon-menu_40px"></use></svg>
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
         </button>
         <nav class="navigation">
           <ul class="menu">
@@ -51,24 +52,26 @@
           <li class="menu__item list">
             <a href="mailto:info@devstudio.com" class="menu__link link"
               ><svg width="16" height="12" class="menu__icon menu__icon--right">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>info@devstudio.com</a>
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
           <li class="menu__item list">
             <a href="tel:+380961111111" class="menu__link link"
               ><svg width="10" height="16" class="menu__icon menu__icon--right">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>+38 096 111 11 11</a>
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
       <!-- HEADER-MODAL-->
-      <div class="header-mob">
+      <div class="header-mob is-hidden">
         <div class="container">
           <button type="button" class="header-mob__btn-close">
             <svg width="40" height="40" class="header-mob__btn-close-icon">
-              <use href="./images/icons.svg#icon-close_40px"></use></svg
-            >
+              <use href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
           </button>
           <ul class="mob-menu">
             <li class="mob-menu__item list">
@@ -84,11 +87,11 @@
           <ul class="mob-contacts link">
             <li class="mob-menu__item list">
               <a href="mailto:info@devstudio.com" class="mob-menu__link-mail link">
-                info@devstudio.com</a>
+                info@devstudio.com</a
+              >
             </li>
             <li class="mob-menu__item list">
-              <a href="tel:+380961111111" class="mob-menu__link-phone link">
-                +38 096 111 11 11</a>
+              <a href="tel:+380961111111" class="mob-menu__link-phone link"> +38 096 111 11 11</a>
             </li>
           </ul>
           <ul class="mob-social">
@@ -98,18 +101,23 @@
               >
             </li>
             <li class="mob-social__item list link">
-              <a href="" class="link" lang="en target="_blank" rel="noopener norefferer nofollow"">Twitter</a>
+              <a href="" class="link" lang="en" target="_blank" rel="noopener norefferer nofollow"
+                >Twitter</a
+              >
             </li>
             <li class="mob-social__item list link">
-              <a href="" class="link" lang="en target="_blank" rel="noopener norefferer nofollow"">Facebook</a>
+              <a href="" class="link" lang="en" target="_blank" rel="noopener norefferer nofollow"
+                >Facebook</a
+              >
             </li>
             <li class="mob-social__item list link">
-              <a href="" class="link" lang="en target="_blank" rel="noopener norefferer nofollow"">LinkedIn</a>
+              <a href="" class="link" lang="en" target="_blank" rel="noopener norefferer nofollow"
+                >LinkedIn</a
+              >
             </li>
           </ul>
         </div>
       </div>
-    </header>
     </header>
     <main class="main">
       <!--Портфоліо-->
@@ -137,7 +145,31 @@
             <li class="portfolio-project__item list">
               <a href="" class="portfolio-project__link link">
                 <div class="portfolio-project__card">
-                  <img src="./images/tehnokrjak.jpg" alt="Технокряк" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card/tehnokrjak-lep.jpg    1x,
+                        ./images/card/tehnokrjak-lep-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/card/tehnokrjak-tab.jpg    1x,
+                        ./images/card/tehnokrjak-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/card/tehnokrjak-mob.jpg    1x,
+                        ./images/card/tehnokrjak-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img src="./images/card/tehnokrjak-lep.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="portfolio-project__text portfolio-project__text--padding">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -157,11 +189,34 @@
             <li class="portfolio-project__item list">
               <a href="" class="portfolio-project__link link">
                 <div class="portfolio-project__card">
-                  <img
-                    src="./images/new_orlean.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card/new_orlean-lep.jpg    1x,
+                        ./images/card/new_orlean-lep-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/card/new_orlean-tab.jpg    1x,
+                        ./images/card/new_orlean-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/card/new_orlean-mob.jpg    1x,
+                        ./images/card/new_orlean-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img
+                      src="./images/card/new_orlean-lep.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <div class="portfolio-project__text portfolio-project__text--padding">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -181,7 +236,22 @@
             <li class="portfolio-project__item list">
               <a href="" class="portfolio-project__link link">
                 <div class="portfolio-project__card">
-                  <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/card/seafood-lep.jpg 1x, ./images/card/seafood-lep-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="./images/card/seafood-tab.jpg 1x, ./images/card/seafood-tab-2x.jpg 2x"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/card/seafood-mob.jpg 1x, ./images/card/seafood-mob-2x.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+
+                    <img src="./images/card/seafood-lep.jpg" alt="Ресторан Seafood" />
+                  </picture>
                   <div class="portfolio-project__text portfolio-project__text--padding">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -201,7 +271,22 @@
             <li class="portfolio-project__item list">
               <a href="" class="portfolio-project__link link">
                 <div class="portfolio-project__card">
-                  <img src="./images/prime.jpg" alt="Проект Prime" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/card/prime-lep.jpg 1x, ./images/card/prime-lep-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="./images/card/prime-tab.jpg 1x, ./images/card/prime-tab-2x.jpg 2x"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/card/prime-mob.jpg 1x, ./images/card/prime-mob-2x.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+
+                    <img src="./images/card/prime-lep.jpg" alt="Проект Prime" />
+                  </picture>
                   <div class="portfolio-project__text portfolio-project__text--padding">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -221,7 +306,22 @@
             <li class="portfolio-project__item list">
               <a href="" class="portfolio-project__link link">
                 <div class="portfolio-project__card">
-                  <img src="./images/boxes.jpg" alt="Проект Boxes" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/card/boxes-lep.jpg 1x, ./images/card/boxes-lep-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="./images/card/boxes-tab.jpg 1x, ./images/card/boxes-tab-2x.jpg 2x"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/card/boxes-mob.jpg 1x, ./images/card/boxes-mob-2x.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+
+                    <img src="./images/card/boxes-lep.jpg" alt="Проект Boxes" />
+                  </picture>
                   <div class="portfolio-project__text portfolio-project__text--padding">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -241,11 +341,34 @@
             <li class="portfolio-project__item list">
               <a href="" class="portfolio-project__link link">
                 <div class="portfolio-project__card">
-                  <img
-                    src="./images/inspirations.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card/inspirations-lep.jpg    1x,
+                        ./images/card/inspirations-lep-2x.jpg 2x
+                      "
+                      media="(min-widthwidthwidth:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/card/inspirations-tab.jpg    1x,
+                        ./images/card/inspirations-tab-2x.jpg 2x
+                      "
+                      media="(min-widthwidthwidth:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/card/inspirations-mob.jpg    1x,
+                        ./images/card/inspirations-mob-2x.jpg 2x
+                      "
+                      media="(min-widthwidthwidth:320px)"
+                    />
+
+                    <img
+                      src="./images/card/inspirations-lep.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <div class="portfolio-project__text portfolio-project__text--padding">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -265,7 +388,22 @@
             <li class="portfolio-project__item list">
               <a href="" class="portfolio-project__link link">
                 <div class="portfolio-project__card">
-                  <img src="./images/edition.jpg" alt="Издание Limited Edition" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/card/edition-lep.jpg 1x, ./images/card/edition-lep-2x.jpg 2x"
+                      media="(min-widthwidth:1200px)"
+                    />
+                    <source
+                      srcset="./images/card/edition-tab.jpg 1x, ./images/card/edition-tab-2x.jpg 2x"
+                      media="(min-widthwidth:768px)"
+                    />
+                    <source
+                      srcset="./images/card/edition-mob.jpg 1x, ./images/card/edition-mob-2x.jpg 2x"
+                      media="(min-widthwidth:320px)"
+                    />
+
+                    <img src="./images/card/edition-lep.jpg" alt="Издание Limited Edition" />
+                  </picture>
                   <div class="portfolio-project__text portfolio-project__text--padding">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -285,7 +423,22 @@
             <li class="portfolio-project__item list">
               <a href="" class="portfolio-project__link link">
                 <div class="portfolio-project__card">
-                  <img src="./images/lab.jpg" alt="Проект LAB" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/card/lab-lep.jpg 1x, ./images/card/lab-lep-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="./images/card/lab-tab.jpg 1x, ./images/card/lab-tab-2x.jpg 2x"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/card/lab-mob.jpg 1x, ./images/card/lab-mob-2x.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+
+                    <img src="./images/card/lab-lep.jpg" alt="Проект LAB" />
+                  </picture>
                   <div class="portfolio-project__text portfolio-project__text--padding">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -305,7 +458,22 @@
             <li class="portfolio-project__item list">
               <a href="" class="portfolio-project__link link">
                 <div class="portfolio-project__card">
-                  <img src="./images/growing.jpg" alt="Growing Business" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/card/growing-lep.jpg 1x, ./images/card/growing-lep-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="./images/card/growing-tab.jpg 1x, ./images/card/growing-tab-2x.jpg 2x"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/card/growing-mob.jpg 1x, ./images/card/growing-mob-2x.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+
+                    <img src="./images/card/growing-lep.jpg" alt="Growing Business" />
+                  </picture>
                   <div class="portfolio-project__text portfolio-project__text--padding">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -397,6 +565,6 @@
         </form>
       </div>
     </footer>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
