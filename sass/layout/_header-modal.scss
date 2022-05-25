@@ -54,7 +54,7 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  padding-right: 40px;
+  // padding-right: 40px;
 
   opacity: 1;
   visibility: visible;
@@ -84,14 +84,14 @@
 
 .mob-menu {
   @include font(500, 40px, 1.18, 0.02em);
-  color: var(--main-color);
+  // color: var(--main-color);
 }
 
 .mob-menu__item {
-  & > a {
-    color: var(--main-color);
-    transition: color var(--transition-main);
-  }
+  // & > a {
+  //   color: var(--main-color);
+  //   transition: color var(--transition-main);
+  // }
 
   & > a:hover,
   & > a:focus {
@@ -102,6 +102,10 @@
   }
 }
 
+.mob-menu__link {
+  color: var(--main-color);
+}
+
 .mob-menu-studio__link {
   color: var(--fourth-color);
 }
@@ -110,7 +114,22 @@
   color: var(--fourth-color);
 }
 
-.mob-menu__link-phone {
+.mob-contacts__item {
+  // & > a {
+  //   color: var(--main-color);
+  //   transition: color var(--transition-main);
+  // }
+
+  & > a:hover,
+  & > a:focus {
+    color: var(--hover-color);
+  }
+  & + & {
+    margin-top: 32px;
+  }
+}
+
+.mob-contacts__link-phone {
   @include font(500, 34px, 1.18, 0.02em);
 
   color: var(--fourth-color);
@@ -123,16 +142,16 @@
   margin-bottom: 32px;
 }
 
-.mob-menu__link-mail {
+.mob-contacts__link-mail {
   @include font(500, 24px, 1.17, 0.02em);
 
-  color: var(--fourth-color);
+  color: var(--second-color);
   transition: color var(--transition-main);
 
-  &:hover,
-  &:focus {
-    color: var(--hover-color);
-  }
+  // &:hover,
+  // &:focus {
+  //   color: var(--hover-color);
+  // }
 }
 
 .mob-social {
@@ -142,6 +161,9 @@
 .mob-social__item {
   & > a {
     @include font(500, 18px, 1.22, 0.02em);
+    @media screen and (max-width: 479px) {
+      font-size: 4vmin;
+    }
 
     color: var(--fourth-color);
   }

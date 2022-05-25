@@ -139,7 +139,6 @@
   @media screen and (min-width: 1200px) {
     text-align: start;
   }
-
 }
 
 .footer-social__titel {
@@ -276,6 +275,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  // display: inline-flex;
+  // text-align: center;
   border: none;
 
   margin-right: auto;

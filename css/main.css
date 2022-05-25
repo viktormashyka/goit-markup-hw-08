@@ -359,7 +359,6 @@ address {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  padding-right: 40px;
   opacity: 1;
   visibility: visible;
   transform: translateY(0%);
@@ -391,18 +390,17 @@ address {
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: var(--main-color);
 }
 
-.mob-menu__item > a {
-  color: var(--main-color);
-  transition: color var(--transition-main);
-}
 .mob-menu__item > a:hover, .mob-menu__item > a:focus {
   color: var(--hover-color);
 }
 .mob-menu__item + .mob-menu__item {
   margin-top: 32px;
+}
+
+.mob-menu__link {
+  color: var(--main-color);
 }
 
 .mob-menu-studio__link {
@@ -413,7 +411,14 @@ address {
   color: var(--fourth-color);
 }
 
-.mob-menu__link-phone {
+.mob-contacts__item > a:hover, .mob-contacts__item > a:focus {
+  color: var(--hover-color);
+}
+.mob-contacts__item + .mob-contacts__item {
+  margin-top: 32px;
+}
+
+.mob-contacts__link-phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -422,20 +427,17 @@ address {
   transition: color var(--transition-main);
   margin-bottom: 32px;
 }
-.mob-menu__link-phone:hover, .mob-menu__link-phone:focus {
+.mob-contacts__link-phone:hover, .mob-contacts__link-phone:focus {
   color: var(--hover-color);
 }
 
-.mob-menu__link-mail {
+.mob-contacts__link-mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--fourth-color);
+  color: var(--second-color);
   transition: color var(--transition-main);
-}
-.mob-menu__link-mail:hover, .mob-menu__link-mail:focus {
-  color: var(--hover-color);
 }
 
 .mob-social {
@@ -448,6 +450,11 @@ address {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--fourth-color);
+}
+@media screen and (max-width: 479px) {
+  .mob-social__item > a {
+    font-size: 4vmin;
+  }
 }
 .mob-social__item:not(:last-child) > a::after {
   content: "";
@@ -924,10 +931,6 @@ address {
 }
 .client__link:hover .client__icon, .client__link:focus .client__icon {
   fill: #2196f3;
-}
-
-.portfolio.section {
-  padding-bottom: 94px;
 }
 
 .portfolio-btn__list {
