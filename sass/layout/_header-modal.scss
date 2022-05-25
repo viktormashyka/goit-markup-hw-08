@@ -114,7 +114,15 @@
   color: var(--fourth-color);
 }
 
-.mob-contacts__item {
+.mob-contacts {
+  // margin-bottom: 30px;
+}
+
+.mob-contact {
+  margin-bottom: 64px;
+}
+
+.mob-contact__item {
   // & > a {
   //   color: var(--main-color);
   //   transition: color var(--transition-main);
@@ -129,7 +137,7 @@
   }
 }
 
-.mob-contacts__link-phone {
+.mob-contact__link-phone {
   @include font(500, 34px, 1.18, 0.02em);
 
   color: var(--fourth-color);
@@ -142,7 +150,7 @@
   margin-bottom: 32px;
 }
 
-.mob-contacts__link-mail {
+.mob-contact__link-mail {
   @include font(500, 24px, 1.17, 0.02em);
 
   color: var(--second-color);

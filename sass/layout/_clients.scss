@@ -9,11 +9,7 @@
     margin-bottom: 50px;
   }
 
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 42px;
   text-align: center;
-  // letter-spacing: 0.03em;
   color: var(--main-color);
   padding-top: 0px;
 }
@@ -26,14 +22,14 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 
@@ -52,13 +48,13 @@
   @media screen and (max-width: 767px) {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   @media screen and (min-width: 768px) {
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   @media screen and (min-width: 1200px) {

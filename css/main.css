@@ -411,14 +411,18 @@ address {
   color: var(--fourth-color);
 }
 
-.mob-contacts__item > a:hover, .mob-contacts__item > a:focus {
+.mob-contact {
+  margin-bottom: 64px;
+}
+
+.mob-contact__item > a:hover, .mob-contact__item > a:focus {
   color: var(--hover-color);
 }
-.mob-contacts__item + .mob-contacts__item {
+.mob-contact__item + .mob-contact__item {
   margin-top: 32px;
 }
 
-.mob-contacts__link-phone {
+.mob-contact__link-phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -427,11 +431,11 @@ address {
   transition: color var(--transition-main);
   margin-bottom: 32px;
 }
-.mob-contacts__link-phone:hover, .mob-contacts__link-phone:focus {
+.mob-contact__link-phone:hover, .mob-contact__link-phone:focus {
   color: var(--hover-color);
 }
 
-.mob-contacts__link-mail {
+.mob-contact__link-mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -571,14 +575,14 @@ address {
 } */
 @media screen and (max-width: 767px) {
   .benefits__list {
-    margin-bottom: -30px;
+    margin-top: -30px;
   }
 }
 @media screen and (min-width: 768px) {
   .benefits__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 }
@@ -607,14 +611,14 @@ address {
 
 @media screen and (min-width: 480px) {
   .benefits__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: calc(50% - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -738,14 +742,14 @@ address {
 
 @media screen and (min-width: 480px) {
   .team__list {
-    margin-bottom: -30px;
+    margin-top: -30px;
   }
 }
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 }
@@ -766,14 +770,14 @@ address {
 }
 @media screen and (max-width: 767px) {
   .team__item {
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .team__item {
     width: calc(50% - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -869,7 +873,7 @@ address {
   .client__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 }
@@ -877,7 +881,7 @@ address {
   .client__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 }
@@ -892,14 +896,14 @@ address {
   .client__item {
     width: calc(50% - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .client__item {
     width: calc(33.3333333333% - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -935,7 +939,6 @@ address {
 
 .portfolio-btn__list {
   display: flex;
-  justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .portfolio-btn__list {
@@ -945,15 +948,33 @@ address {
 @media screen and (min-width: 768px) {
   .portfolio-btn__list {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 .portfolio-btn__item:not(:last-child) {
   margin-right: 8px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio-btn__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
 
-.portfolio-btn__list--bottom {
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .portfolio-btn__list--bottom {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-btn__list--bottom {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-btn__list--bottom {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__btn {
@@ -980,16 +1001,11 @@ address {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (min-width: 480px) {
-  .portfolio-project__list {
-    margin-bottom: -30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .portfolio-project__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 }
@@ -1002,7 +1018,7 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio-project__item {
+  .portfolio-project__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1010,7 +1026,7 @@ address {
   .portfolio-project__item {
     width: calc(50% - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1108,27 +1124,27 @@ address {
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: baseline;
   }
 }
-
-.footer-container__contact {
-  max-width: 232px;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    justify-content: start;
+  }
 }
+
 @media screen and (max-width: 1199px) {
   .footer-container__contact {
     text-align: center;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-container__contact {
     text-align: start;
+    margin-right: 70px;
   }
 }
 
@@ -1182,21 +1198,16 @@ address {
   color: #ffffff;
 }
 
-.footer-social {
-  max-width: 206px;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-}
 @media screen and (max-width: 1199px) {
   .footer-social {
     text-align: center;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
     text-align: start;
+    margin-right: 93px;
   }
 }
 
@@ -1248,8 +1259,6 @@ address {
     max-width: 450px;
     height: auto;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1302,9 +1311,9 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 input .footer__input {
