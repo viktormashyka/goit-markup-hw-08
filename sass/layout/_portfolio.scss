@@ -16,6 +16,9 @@
 
 .portfolio-btn__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfolio-btn__item:nth-last-child(n + 3) {
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
