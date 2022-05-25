@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -412,7 +411,7 @@ address {
   color: var(--fourth-color);
 }
 
-.mob-contactі {
+.mob-contacts {
   margin-bottom: 30px;
 }
 
