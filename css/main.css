@@ -486,7 +486,7 @@ address {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #c4c4c4;
+  background-color: var(--background-color);
 }
 @media screen and (min-width: 1200px) {
   .hero {
