@@ -123,10 +123,6 @@
 }
 
 .mob-contact__item {
-  // & > a {
-  //   color: var(--main-color);
-  //   transition: color var(--transition-main);
-  // }
 
   & > a:hover,
   & > a:focus {
@@ -155,11 +151,6 @@
 
   color: var(--second-color);
   transition: color var(--transition-main);
-
-  // &:hover,
-  // &:focus {
-  //   color: var(--hover-color);
-  // }
 }
 
 .mob-social {
@@ -169,9 +160,6 @@
 .mob-social__item {
   & > a {
     @include font(500, 18px, 1.22, 0.02em);
-    // @media screen and (max-width: 479px) {
-    //   font-size: 4vmin;
-    // }
     @media screen and (max-width: 479px) {
       font-size: calc((100vw - 320px) / (480 - 320) * (18 - 12) + 12px);
     }
